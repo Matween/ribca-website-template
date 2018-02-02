@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="si">
+    <head>
+        <title>Gostilnica Rib'ca</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
+        <link href="https://fonts.googleapis.com/css?family=Asap" rel="stylesheet">   
+        <link href="assets/css/main.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="nav-container">
+            <div class="brand">
+                <img src="images/ribca.png">
+            </div>
+            <nav id="nav">
+                <ul class="nav-items">
+                    <li><a href="#nav">Domov</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                    <li><a href="#offer">Nudimo</a></li>
+                    <li><a href="#where">Kje smo</a></li>
+                    <li><a href="menu.html">Cenik</a></li>
+                </ul>
+                <button class="burger">
+                    <svg id="burger-svg" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" fill="#1a1a1f">
+                        <title>Skrij / Pokaži Navigacijo</title>
+                        <rect class="burger-svg__base" width="50" height="50"/>
+                        <g class="burger-svg__bars" fill="#f2f2f2">
+                            <rect class="burger-svg__bar burger-svg__bar-1" x="14" y="18" width="22" height="2"/>
+                            <rect class="burger-svg__bar burger-svg__bar-2" x="14" y="24" width="22" height="2"/>
+                            <rect class="burger-svg__bar burger-svg__bar-3" x="14" y="30" width="22" height="2"/>
+                        </g>
+                    </svg>
+                </button>
+            </nav>
+        </div>
+        <div id="fullscreen-nav" class="overlay">
+            <div class="overlay-content">
+                <a href="#nav" onclick="toggleBurgerNav()">Domov</a>
+                <a href="#contact" onclick="toggleBurgerNav()">Kontakt</a>
+                <a href="#offer" onclick="toggleBurgerNav()">Nudimo</a>
+                <a href="#where" onclick="toggleBurgerNav()">Kje smo</a>
+                <a href="menu.html" onclick="toggleBurgerNav()">Cenik</a>
+            </div>
+        </div>
+        <div id="container">
+            <div id="contact" class="container-part-1">
+                <div class="info">
+                    <center>
+                        <img src="images/ribca.png">
+                        <h4>Mestni trg 6
+                        <br /><br />3310 Žalec</h4>
+                        <h5>041/971-430</h5>
+                        <p>07:00 - 22:00 / Pon. - Sob.</p>
+                        <h3>Dostava</h3>
+                        <p>10:00 - 21:00
+                        <br /><br />Po Žalcu brezplačno!
+                        <br /><br />Izven Žalca do 5 km 0,40€, do 10 km 0,60€.
+                        <br /><br />V primeru vrednosti računa nad 20,00€ 
+                        <br /><br />dostava brezplačna!
+                        </p>
+                    </center>
+                </div>
+            </div>
+            <div class="container-part-2">
+                <div id="arrow-left" class="arrow"></div>
+                <div id="slider">
+                    <div class="slide slide1">
+                        <div class="slide-content"></div>
+                    </div>
+                    <div class="slide slide2">
+                        <div class="slide-content"></div>
+                    </div>
+                    <div class="slide slide3">
+                        <div class="slide-content"></div>
+                    </div>
+                    <div class="slide slide4">
+                        <div class="slide-content"></div>
+                    </div>
+                    <div class="slide slide5">
+                        <div class="slide-content"></div>
+                    </div>
+                </div>
+                <div id="arrow-right" class="arrow"></div>
+            </div>
+            <div id="offer" class="container-part-3">
+                <div class="about">
+                    <center>
+                        <h2>Nudimo</h2>
+                        <h4>Dnevne malice</h4>
+                        <p>10:00 - 14:00 / Pon. - Pet.</p>
+                        <br /><br /><br /><br />
+                        <h4>Dnevno kosilo</h4>
+                        <p>12:00 - 15:00</p> 
+                        <br /><br /><br /><br />
+                        <h4>Jedi po naročilu</h4>
+                        <h4>Dostava na dom ali službo</h4>
+                    </center>
+                </div>
+            </div>
+            <div id="where" class="container-part-4">
+                <div id="map"></div>
+            </div>
+            <div class="container-part-5">
+
+            </div>             
+        </div>
+        <footer id="bottom" class="footer-distributed">
+            <div class="footer-left">
+                <img class="footer-logo" src="images/ribca.png">
+                <p class="footer-links">
+                    <a href="#nav">Domov</a>
+                    &nbsp;
+                    <a href="#contact">Kontakt</a>
+                    &nbsp;
+                    <a href="#offer">Nudimo</a>
+                    &nbsp;
+                    <a href="#where">Kje smo</a>
+                    &nbsp;
+                    <a href="menu.html">Cenik</a>
+                </p>
+                <p class="footer-company-name">Gostilnica Rib'ca - <span id="year-current"></span></p>
+            </div>
+            <div class="footer-center">
+                <div>
+                    <i class="fa fa-map-marker"></i>
+                    <p><span>Mestni trg 6</span> 3310 Žalec</p>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <p><a href="tel:+38641971430">041/971-430</a></p>
+                </div>
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <p><a href="mailto:gostilnica.ribca@gmail.com">gostilnica.ribca@gmail.com</a></p>
+                </div>
+            </div>
+            <div class="footer-right">
+                <p class="footer-company-about">
+                    <span>O nas</span>
+                    Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+                </p>
+                <div class="footer-icons">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                </div>
+            </div>
+        </footer>
+
+        <!--JAVASCRIPT-->
+        <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+        <script type="text/javascript" src="assets/js/burger.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+        <script type="text/javascript" src="assets/js/slides.js"></script>
+        <script type="text/javascript" src="assets/js/functions.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBKr3uEwz53xYN2umyiuchovdzNfoBumPg&callback=myMap"></script>
+    </body>
+</html>

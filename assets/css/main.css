@@ -164,6 +164,7 @@ body {
     margin: 0 auto;
     background: #1a1a1f;
     overflow: hidden;
+    text-align: center;
 }
 
 .container-part-1 .info img {
@@ -195,6 +196,7 @@ body {
     margin: 0 auto;
     background: #1a1a1f;
     overflow: hidden;
+    text-align: center;
 }
 
 .container-part-3 .about p,

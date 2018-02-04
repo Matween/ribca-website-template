@@ -393,7 +393,7 @@ body {
 }
 
 .footer-distributed .footer-left .footer-links a{
-	color:  #f2f2f2!important;
+	color:  #f2f2f2;
 	display:inline-block;
 	line-height: 1.8;
 	text-decoration: none;
@@ -405,7 +405,7 @@ body {
 }
 
 .footer-distributed .footer-left .footer-links a:visited{
-	color:  #f2f2f2!important;
+	color:  #f2f2f2;
 }
 
 .footer-distributed .footer-company-name{

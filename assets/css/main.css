@@ -294,6 +294,9 @@ body {
     background-repeat: no-repeat;
 }
 
+.container-part-2 #slider {
+    background-color: #1a1a1f;
+}
   
 .container-part-2 #slider .slide1 {
     background-image: url("../../images/slide1.jpg");
@@ -398,6 +401,10 @@ body {
 	line-height: 1.8;
 	text-decoration: none;
 	color:  inherit;
+}
+
+.footer-distributed .footer-left .footer-links a:link{
+	color:  #f2f2f2;
 }
 
 .footer-distributed .footer-left .footer-links a:hover{

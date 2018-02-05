@@ -113,7 +113,6 @@ body {
     left: 0;
     background-color: #1a1a1f;
     background-blend-mode: soft-light;
-    overflow-y: hidden;
     transition: 0.5s;
 }
 
@@ -123,7 +122,7 @@ body {
 }
 
 .overlay a {
-    padding: 8px;
+    padding: 4px;
     text-decoration: none;
     font-size: 36px;
     line-height: 40px;
@@ -139,7 +138,7 @@ body {
 
 @media screen and (max-height: 450px) {
     .overlay {
-        overflow-y: auto;
+        overflow-y: visible;
     }
     .overlay a {
         font-size: 20px
@@ -600,7 +599,6 @@ body {
     }
 }
 
-/* fullscreen image */
 #fullscreen {
     display: none;
     position: fixed;
@@ -614,27 +612,11 @@ body {
     background-color: #1a1a1f;
 }
 
-.modal-content {
+#fullscreen .modal-content {
     margin: auto;
     display: block;
     width: 80%;
     max-width: 700px;
-}
-
-/* Caption of Modal Image */
-#caption {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-    text-align: center;
-    color: #f2f2f2;
-    padding: 10px 0;
-    height: 150px;
-}
-
-/* Add Animation */
-.modal-content, #caption {    
     -webkit-animation-name: zoom;
     -webkit-animation-duration: 0.6s;
     animation-name: zoom;
@@ -651,8 +633,7 @@ body {
     to {transform:scale(1)}
 }
 
-/* The Close Button */
-.close {
+#fullscreen .close {
     position: absolute;
     top: 15px;
     right: 35px;
@@ -662,16 +643,15 @@ body {
     transition: 0.3s;
 }
 
-.close:hover,
-.close:focus {
+#fullscreen .close:hover,
+#fullscreen .close:focus {
     color: #8f9296;
     text-decoration: none;
     cursor: pointer;
 }
 
-/* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px){
-    .modal-content {
+    #fullscreen .modal-content {
         width: 100%;
     }
 }

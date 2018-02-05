@@ -547,11 +547,22 @@ body {
 /* Menu
 ***************************************************************************************************/
 #menu {
-    width: 80%; 
+    width: 80%;
     margin: 0 auto;
     padding-top: 50px;
     padding-bottom: 50px;
     overflow: hidden;
+    text-align: center;
+     
+}
+
+#menu .images {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;         
+    justify-content: center;
+    -webkit-justify-content: center; 
 }
 
 #menu h2 {
@@ -559,13 +570,14 @@ body {
     font: bold;
 }
 
-#menu .responsive .img img {
+
+#menu .images .responsive .img img {
     cursor: pointer;
     width: 100%;
     height: auto;
 }
 
-#menu .responsive .img a {
+#menu .images .responsive .img a {
     text-decoration: none;
 }
 
@@ -573,28 +585,27 @@ body {
     box-sizing: border-box;
 }
 
-#menu .responsive {
+#menu .images .responsive {
     padding: 0 6px;
     float: left;
     width: 24.99999%;
+    padding: 6px;
 }
 
 @media only screen and (min-width: 651px){
-    #menu .responsive {
+    #menu .images .responsive {
         width: 33.33333%;
-        margin: 6px 0;
     }
 }
 
 @media only screen and (max-width: 650px){
-    #menu .responsive {
+    #menu .images .responsive {
         width: 50%;
-        margin: 6px 0;
     }
 }
 
 @media only screen and (max-width: 450px){
-    #menu .responsive {
+    #menu .images .responsive {
         width: 100%;
     }
 }

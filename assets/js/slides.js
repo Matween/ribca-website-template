@@ -1,49 +1,44 @@
-var sliderImages = document.querySelectorAll(".slide"),
-    arrowLeft = document.querySelector("#arrow-left"),
-    arrowRight = document.querySelector("#arrow-right"),
-    current = 0;
+var imagesUrl = [
+    "images/slide1.jpg",
+    "images/slide2.jpg",
+    "images/slide3.jpg",
+    "images/slide4.jpg",
+    "images/slide5.jpg",
+    "images/slide6.jpg",
+    "images/slide7.jpg"
+]
+var index = 1; // slide1.jpg already set, so we start with slide2.jpg
+var slide = $("#slide-image"),
+    arrowNext = $("#next"),
+    arrowPrev = $("#prev");
 
-// Clear all images
-function reset() {
-    for (let i = 0; i < sliderImages.length; i++) {
-        sliderImages[i].style.display = "none";
+function changeImage() {
+    if(index >= imagesUrl.length) {
+        index = 0;
     }
+    slide.css("background-image", "url(" + (imagesUrl[index]) + ")");
+    index++;
 }
 
-// Init slider
-function startSlide() {
-    reset();
-    sliderImages[0].style.display = "block";
-}
+var imgInterval = setInterval(changeImage, 5000);
 
-// Show prev
-function slideLeft() {
-    reset();
-    sliderImages[current - 1].style.display = "block";
-    current--;
-}
-
-// Show next
-function slideRight() {
-    reset();
-    sliderImages[current + 1].style.display = "block";
-    current++;
-}
-
-// Left arrow click
-arrowLeft.addEventListener("click", function() {
-    if (current === 0) {
-        current = sliderImages.length;
+arrowNext.click(function() {
+    clearInterval(imgInterval);
+    index++;
+    if(index >= imagesUrl.length) {
+        index = 0;
     }
-    slideLeft();
+    slide.css("background-image", "url(" + (imagesUrl[index]) + ")");
+    imgInterval = setInterval(changeImage, 5000);
 });
 
-// Right arrow click
-arrowRight.addEventListener("click", function() {
-    if (current === sliderImages.length - 1) {
-        current = -1;
+arrowPrev.click(function() {
+    clearInterval(imgInterval);
+    if(index <= 0) {
+        index = imagesUrl.length;
     }
-    slideRight();
+    index--;
+    slide.css("background-image", "url(" + (imagesUrl[index]) + ")");
+    imgInterval = setInterval(changeImage, 5000);
 });
 
-startSlide();

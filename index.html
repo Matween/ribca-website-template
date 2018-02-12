@@ -3,6 +3,9 @@
     <head>
         <title>Gostilnica Rib'ca</title>
         <meta charset="utf-8">
+        <meta name="description" content="Gostilnica Rib'ca">
+        <meta name="keywords" content="Rib'ca, Ribca, Gostilna, Cenik, Ponudba">
+        <meta name="author" content="Matic Božič">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
         <link href="https://fonts.googleapis.com/css?family=Asap" rel="stylesheet">   
@@ -11,7 +14,7 @@
     <body>
         <div class="nav-container">
             <div class="brand">
-                <img src="images/ribca.png">
+                <img src="images/ribca.png" alt="Rib'ca logotip">
             </div>
             <nav id="nav">
                 <ul class="nav-items">
@@ -46,7 +49,7 @@
         <div id="container">
             <div id="contact" class="container-part-1">
                 <div class="info">
-                    <img src="images/ribca.png">
+                    <img src="images/ribca.png" alt="Rib'ca logotip">
                     <h4>Mestni trg 6
                     <br /><br />3310 Žalec</h4>
                     <h5>041/971-430</h5>
@@ -60,26 +63,15 @@
                     </p>
                 </div>
             </div>
+            <h1 id="change-text"></h1>
             <div class="container-part-2">
-                <div id="arrow-left" class="arrow"></div>
                 <div id="slider">
-                    <div class="slide slide1">
-                        <div class="slide-content"></div>
+                    <div class="controls">
+                        <div id="arrow-left" class="arrow"><i id="prev" class="fa fa-2x fa-chevron-left"></i></div>
+                        <div id="arrow-right" class="arrow"><i id="next" class="fa fa-2x fa-chevron-right"></i></div>
                     </div>
-                    <div class="slide slide2">
-                        <div class="slide-content"></div>
-                    </div>
-                    <div class="slide slide3">
-                        <div class="slide-content"></div>
-                    </div>
-                    <div class="slide slide4">
-                        <div class="slide-content"></div>
-                    </div>
-                    <div class="slide slide5">
-                        <div class="slide-content"></div>
-                    </div>
+                    <div id="slide-image"></div>
                 </div>
-                <div id="arrow-right" class="arrow"></div>
             </div>
             <div id="offer" class="container-part-3">
                 <div class="about">
@@ -103,7 +95,7 @@
         </div>
         <footer id="bottom" class="footer-distributed">
             <div class="footer-left">
-                <img class="footer-logo" src="images/ribca.png">
+                <img class="footer-logo" src="images/ribca.png" alt="Rib'ca logotip">
                 <p class="footer-links">
                     <a href="#nav">Domov</a>
                     &nbsp;
@@ -115,7 +107,7 @@
                     &nbsp;
                     <a href="menu.html">Cenik</a>
                 </p>
-                <p class="footer-company-name">Gostilnica Rib'ca - <span id="year-current"></span></p>
+                <p class="footer-company-name">Gostilnica Rib'ca &copy; <span id="year-current"></span></p>
             </div>
             <div class="footer-center">
                 <div>
@@ -134,11 +126,12 @@
             <div class="footer-right">
                 <p class="footer-company-about">
                     <span>O nas</span>
-                    Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+                    Pri nas najdete igralnico za otroke, knjigobežnico, pikado, prenos tekem v živo, gostoljubnost,
+                    kraljevsko dobro hrano, raznovrstnost pijač in hrane. Čakajo vas akcije in posebne ponudbe! Vljudno vabljeni!
                 </p>
                 <div class="footer-icons">
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/GostilnicaRibca" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/gostilnicaribca" target="_blank"><i class="fa fa-instagram"></i></a>
                 </div>
             </div>
         </footer>

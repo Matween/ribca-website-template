@@ -9,6 +9,19 @@ function toggleBurgerNav() {
     $('.burger').trigger('click');
 }
 
+var texts = ["Kraljevsko dobro!", "Vljudno vabljeni.", "Pridite, ne bo vam žal."];
+var counter = 0;
+var heading = $("#change-text");
+setInterval(change, 4000);
+
+function change() {
+  heading.text(texts[counter]);
+  counter++;
+  if (counter >= texts.length) {
+    counter = 0;
+  }
+}
+
 function myMap() {
     var mapOptions = {
         center: new google.maps.LatLng(46.2530714, 15.1621289),
